@@ -13,7 +13,7 @@ import java.util.Map;
 @Configuration
 public class KafkaConfig {
 
-    @Bean
+   /* @Bean
     DefaultKafkaConsumerFactory kafkaConsumerFactory(KafkaProperties properties, ObjectMapper objectMapper) {
         Map<String, Object> consumerProperties = properties.buildConsumerProperties();
         JsonDeserializer<Object> jsonDeserializer = new JsonDeserializer<>(objectMapper);
@@ -22,4 +22,5 @@ public class KafkaConfig {
         return new DefaultKafkaConsumerFactory(consumerProperties,
                 new StringDeserializer(), jsonDeserializer);
     }
+*/
 }

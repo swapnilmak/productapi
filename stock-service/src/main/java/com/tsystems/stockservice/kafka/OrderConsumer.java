@@ -12,7 +12,7 @@ public class OrderConsumer {
 
     @KafkaListener(
             topics = "${spring.kafka.topic.name}"
-            ,groupId = "spring.kafka.consumer.group-id")
+            ,groupId = "${spring.kafka.consumer.group-id}")
     public void consume(OrderEvent orderEvent){
         LOGGER.info("Order event received in stock service => {}", orderEvent.toString());
 
